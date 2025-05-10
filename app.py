@@ -1,10 +1,10 @@
 import logging
 import os
 import uuid
+import requests
 from flask import Flask, jsonify, request, make_response
 
 # OpenTelemetry Instrumentation
-from opentelemetry.trace import get_tracer_provider
 from opentelemetry.instrumentation.requests import RequestsInstrumentor
 RequestsInstrumentor().instrument()
 # End of OpenTelemetry Instrumentation
