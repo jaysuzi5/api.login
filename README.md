@@ -24,4 +24,6 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/jaysuzi5/api.login.git
 git branch -M main
 git push -u origin main
+git tag v0.1.0
+git push origin v0.1.0
 ```
